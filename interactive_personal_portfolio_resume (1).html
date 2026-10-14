@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rivera | Senior Full Stack Engineer - Resume</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen py-8 md:py-12 px-4 sm:px-6 lg:px-8 selection:bg-brand-500 selection:text-white">
+
+    <!-- Container / Paper Card Layout -->
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+
+        <!-- Header / Hero Section -->
+        <header class="bg-slate-900 text-white p-8 md:p-12 relative border-b border-slate-800">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-8">
+                <!-- Name & Role -->
+                <div class="space-y-3 text-center sm:text-left flex-1">
+                    <div class="inline-block px-3 py-1 rounded-full text-xs font-medium bg-brand-500/20 text-brand-300 border border-brand-500/30">
+                        Senior Software Engineer
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+                        Alex Rivera
+                    </h1>
+                    <p class="text-lg font-medium text-brand-400">
+                        Full Stack Engineer &amp; Cloud Architect
+                    </p>
+                    <!-- Quick Contact Badges -->
+                    <div class="pt-2 flex flex-wrap justify-center sm:justify-start gap-4 text-xs sm:text-sm text-slate-300">
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-location-dot text-brand-400"></i> San Francisco, CA
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-envelope text-brand-400"></i> alex.rivera@example.com
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-globe text-brand-400"></i> alexrivera.dev
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Static Profile Avatar -->
+                <div class="shrink-0">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" 
+                         alt="Alex Rivera Profile Photo" 
+                         class="w-28 h-28 sm:w-32 sm:h-32 rounded-xl object-cover border-2 border-slate-700 shadow-md">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Body -->
+        <main class="p-8 md:p-12 space-y-10">
+
+            <!-- About Me Section -->
+            <section space-y-3>
+                <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-2">About Me</h2>
+                <p class="text-slate-700 leading-relaxed text-sm sm:text-base">
+                    Senior Full Stack Engineer with over 8 years of experience building high-performance web applications, serverless microservices, and modern user interfaces. Proven track record of architecting scalable systems supporting 250k+ active users while prioritizing pixel-perfect UI performance and clean, maintainable codebases.
+                </p>
+            </section>
+
+            <hr class="border-slate-100">
+
+            <!-- Skills Section (Static Grid) -->
+            <section space-y-4>
+                <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-4">Technical Expertise</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                    <!-- Frontend -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/80">
+                        <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-code text-brand-500"></i> Frontend Architecture
+                        </h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">TypeScript</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">React &amp; Next.js</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Vue.js</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Tailwind CSS</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">HTML5 / Web APIs</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/80">
+                        <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-server text-brand-500"></i> Backend &amp; Databases
+                        </h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Node.js / Express</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Python / FastAPI</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">PostgreSQL</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Redis</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">GraphQL / REST</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & Infrastructure -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/80">
+                        <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-cloud text-brand-500"></i> Cloud &amp; Infrastructure
+                        </h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">AWS Architecture</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Docker &amp; K8s</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">CI/CD Pipelines</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Vercel / Cloudflare</span>
+                        </div>
+                    </div>
+
+                    <!-- Development Tools -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/80">
+                        <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-wrench text-brand-500"></i> Developer Tools &amp; Testing
+                        </h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Git &amp; GitHub</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Jest &amp; Cypress</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Figma / UI Systems</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium text-slate-700">Web Vitals Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-slate-100">
+
+            <!-- Work Experience Section -->
+            <section space-y-6>
+                <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-6">Professional Experience</h2>
+
+                <div class="space-y-8">
+                    <!-- Job 1 -->
+                    <div class="border-l-2 border-brand-500 pl-4 space-y-2">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h3 class="text-base font-bold text-slate-900">Lead Frontend Engineer</h3>
+                            <span class="text-xs font-semibold text-slate-500">2022 - Present</span>
+                        </div>
+                        <div class="text-xs font-semibold text-brand-600">TechCorp Solutions • San Francisco, CA</div>
+                        <p class="text-sm text-slate-600">
+                            Spearheaded the technical overhaul of the core SaaS enterprise portal. Improved web vital page load metrics by 40% and mentored a cross-functional team of 6 engineers.
+                        </p>
+                        <ul class="list-disc list-inside text-xs text-slate-600 space-y-1 pt-1">
+                            <li>Architected micro-frontend systems using Next.js, reducing build and deployment durations by 50%.</li>
+                            <li>Integrated comprehensive Playwright E2E automated testing suites.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="border-l-2 border-slate-300 pl-4 space-y-2">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h3 class="text-base font-bold text-slate-900">Full Stack Developer</h3>
+                            <span class="text-xs font-semibold text-slate-500">2019 - 2022</span>
+                        </div>
+                        <div class="text-xs font-semibold text-slate-500">Innovate Labs • Austin, TX</div>
+                        <p class="text-sm text-slate-600">
+                            Designed GraphQL APIs and scalable frontend dashboard views for processing real-time telemetry streaming analytics.
+                        </p>
+                        <ul class="list-disc list-inside text-xs text-slate-600 space-y-1 pt-1">
+                            <li>Built real-time web-socket dashboard components handling 10k+ dynamic events per second.</li>
+                            <li>Migrated legacy monolithic services to AWS Lambda serverless endpoints.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="border-l-2 border-slate-300 pl-4 space-y-2">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h3 class="text-base font-bold text-slate-900">Junior Web Developer</h3>
+                            <span class="text-xs font-semibold text-slate-500">2017 - 2019</span>
+                        </div>
+                        <div class="text-xs font-semibold text-slate-500">Digital Crafters • Remote</div>
+                        <p class="text-sm text-slate-600">
+                            Constructed responsive e-commerce platforms and accessible marketing sites for agency clients.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-slate-100">
+
+            <!-- Featured Projects Section -->
+            <section space-y-4>
+                <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-4">Key Projects</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Project 1 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/80 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-sm">CloudAnalytics Platform</h3>
+                        <p class="text-xs text-slate-600">
+                            Monitoring platform providing real-time multi-cloud metric aggregation and cost estimation.
+                        </p>
+                        <div class="text-[11px] font-medium text-slate-500">
+                            Tech: React, Tailwind CSS, Node.js, PostgreSQL
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/80 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-sm">PromptCraft Studio</h3>
+                        <p class="text-xs text-slate-600">
+                            AI assistant application enabling prompt orchestration, document parsing, and workflow automation.
+                        </p>
+                        <div class="text-[11px] font-medium text-slate-500">
+                            Tech: Next.js, OpenAI API, TypeScript, Vercel
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-slate-100">
+
+            <!-- Education & Credentials -->
+            <section space-y-4>
+                <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-4">Education &amp; Credentials</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                        <div class="font-bold text-slate-900">B.S. in Computer Science</div>
+                        <div class="text-xs text-slate-600">University of California, Berkeley</div>
+                        <div class="text-xs text-slate-500">2013 - 2017 • Graduated with Honors</div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                        <div class="font-bold text-slate-900">Solutions Architect Certified</div>
+                        <div class="text-xs text-slate-600">Amazon Web Services (AWS)</div>
+                        <div class="text-xs text-slate-500">Issued 2023 • Active Certification</div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-slate-100">
+
+            <!-- Static Contact Information Banner -->
+            <section class="bg-slate-900 text-white p-6 rounded-xl space-y-3">
+                <h2 class="text-xs uppercase tracking-widest font-bold text-brand-400">Contact &amp; Connect</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-slate-300">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-brand-400"></i>
+                        <span>alex.rivera@example.com</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-brand-400"></i>
+                        <span>+1 (555) 019-2834</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-brands fa-linkedin text-brand-400"></i>
+                        <span>linkedin.com/in/alexrivera</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-slate-50 border-t border-slate-200 py-4 px-8 text-center text-xs text-slate-500">
+            Alex Rivera — Curriculum Vitae &amp; Resume
+        </footer>
+
+    </div>
+
+</body>
+</html>
